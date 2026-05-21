@@ -115,6 +115,11 @@ img {
   background-image: url("assets/festival-popcorn.png");
 }
 
+.scene-bg--final {
+  background-image: url("assets/star-lanterns.png");
+  background-position: center top;
+}
+
 .hero__content {
   width: min(100%, 44rem);
   padding: 5.5rem 1.25rem 2.4rem;
@@ -207,6 +212,15 @@ p {
   font-size: 0.88rem;
   font-weight: 800;
   line-height: 1.45;
+}
+
+.cta-helper {
+  margin: 0.8rem 0 0;
+  color: rgba(255, 243, 214, 0.9);
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
 }
 
 .section {
@@ -323,6 +337,37 @@ p {
 
 .character-scene img {
   object-position: 50% 46%;
+}
+
+.soft-cta {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255, 210, 122, 0.12), transparent 17rem),
+    linear-gradient(180deg, rgba(8, 14, 29, 0), rgba(16, 24, 45, 0.24), rgba(8, 14, 29, 0));
+  text-align: center;
+}
+
+.soft-cta__panel {
+  width: min(100%, 34rem);
+  margin-inline: auto;
+  padding: 1.4rem;
+  border: 1px solid rgba(255, 210, 122, 0.22);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 243, 214, 0.08), rgba(255, 243, 214, 0.025)),
+    rgba(8, 14, 29, 0.58);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(12px);
+}
+
+.soft-cta__panel h2 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.45rem, 6.5vw, 2.2rem);
+}
+
+.soft-cta__panel p {
+  color: var(--text);
 }
 
 .details {
@@ -487,32 +532,19 @@ p {
   position: relative;
   z-index: 1;
   display: grid;
-  gap: 0.7rem;
   justify-items: center;
   margin: 1rem 0 1.2rem;
-  padding: 1rem;
+  padding: 0.68rem;
   border: 1px dashed rgba(36, 24, 15, 0.34);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.32);
 }
 
-.qr-placeholder {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.38rem;
-  width: 7.5rem;
-  aspect-ratio: 1;
-  padding: 0.7rem;
-  border: 2px solid #24180f;
-  border-radius: 8px;
-  background: #fffaf0;
-}
-
-.qr-placeholder span {
-  border: 2px solid #24180f;
-  background:
-    linear-gradient(90deg, #24180f 0 28%, transparent 28% 44%, #24180f 44% 62%, transparent 62%),
-    linear-gradient(#24180f 0 22%, transparent 22% 42%, #24180f 42% 68%, transparent 68%);
+.qr-area img {
+  width: min(100%, 18rem);
+  height: auto;
+  border-radius: 4px;
+  background: #fff;
 }
 
 .step-list {
@@ -575,12 +607,11 @@ p {
 }
 
 .entry {
-  min-height: 86svh;
+  min-height: 92svh;
   text-align: center;
 }
 
-.entry-panel,
-.line-panel {
+.entry-panel {
   width: min(100%, 36rem);
   margin-inline: auto;
   padding: 1.5rem;
@@ -593,18 +624,15 @@ p {
   backdrop-filter: blur(16px);
 }
 
-.entry-panel p,
-.line-panel p {
+.entry-panel p {
   color: var(--text);
 }
 
-.line {
-  padding-top: 3.2rem;
-  padding-bottom: 6rem;
-  text-align: center;
+.final-cta::after {
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 210, 122, 0.13), transparent 18rem),
-    linear-gradient(180deg, rgba(16, 24, 45, 0.26), rgba(7, 9, 18, 0));
+    linear-gradient(180deg, rgba(7, 10, 20, 0.1) 0%, rgba(7, 10, 20, 0.42) 38%, rgba(7, 10, 20, 0.92) 100%),
+    radial-gradient(circle at 50% 16%, rgba(255, 210, 122, 0.18), transparent 17rem),
+    radial-gradient(circle at 80% 60%, rgba(240, 138, 55, 0.22), transparent 15rem);
 }
 
 .button {
@@ -640,6 +668,16 @@ p {
 
 .button--primary {
   background: linear-gradient(135deg, #ffe28e, var(--orange) 58%, #db5a26);
+}
+
+.button--secondary {
+  min-height: 3.45rem;
+  border: 1px solid rgba(255, 210, 122, 0.34);
+  background:
+    linear-gradient(135deg, rgba(255, 210, 122, 0.18), rgba(240, 138, 55, 0.26)),
+    rgba(8, 14, 29, 0.56);
+  color: var(--cream);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 
 .button--line {
