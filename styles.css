@@ -111,6 +111,11 @@ img {
   background-position: center top;
 }
 
+.scene-bg--memory {
+  background-image: url("assets/memory-night.png");
+  background-position: center;
+}
+
 .scene-bg--popcorn {
   background-image: url("assets/festival-popcorn.png");
 }
