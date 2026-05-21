@@ -98,8 +98,8 @@ img {
 }
 
 .scene-bg--hero {
-  background-image: url("assets/hero.png");
-  background-position: center top;
+  background-image: url("assets/hero-guide-cinema.png");
+  background-position: 62% center;
 }
 
 .scene-bg--gate {
